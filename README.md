@@ -1,3 +1,43 @@
+# Acquia Headless CMS
+
+This is installtion guide for the Acquia Headless CMS project.
+Follow all the steps one by one to setup your local instance.
+
+## Tools & Prerequisites
+
+The following tools are required for setting up the site.
+
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - v2.17.1
+- [Composer](https://getcomposer.org/download/) - v2 or higher
+- [ddev](https://github.com/drud/ddev) - v1.17.0
+
+Note: Please make sure you have all above tools in-place before
+you start with next tasks.
+
+---
+
+## Setting up the project
+
+### Step 1] Git repository setup:
+
+1. Clone the project.
+
+### Step 2] Local environment (DDEV) setup:
+
+#### Pre-requisites
+
+- Docker
+- Docker Compose
+- DDEV
+- Make sure your ssh pub keys are added to dev server for db sync.
+
+#### 2.1] Run the following command to setup Drupal
+
+- `ddev start`
+- Require all `ddev composer install`
+- Import configurations `ddev drush cim`
+- To login use `ddev drush uli`
+
 Acquia Drupal Recommended Project
 ====
 
