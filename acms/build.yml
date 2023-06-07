@@ -1,0 +1,12 @@
+sites:
+  default:
+    modules:
+      - acquia_cms_headless_ui
+      - acquia_cms_search
+      - acquia_cms_tour
+      - acquia_cms_toolbar
+      - consumer_image_styles
+    starter_kit: acquia_cms_headless
+    themes:
+      admin: acquia_claro
+      default: olivero
