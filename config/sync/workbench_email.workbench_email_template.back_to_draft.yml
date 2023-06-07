@@ -1,0 +1,61 @@
+uuid: b55e46fb-5a47-4ced-82fe-64f1ee97a036
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+_core:
+  default_config_hash: 5jtUT7rRzui3vtjRp7QV0bR0nmX4-W3r8lyuNXTgEwg
+id: back_to_draft
+label: 'Back to Draft'
+format: plain_text
+subject: '[node:title] State Changed'
+body:
+  value: '[node:title] is moved back to draft, Please check.'
+  format: plain_text
+bundles: {  }
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+  email:
+    id: email
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  role:
+    id: role
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+  entity_reference_user:
+    id: entity_reference_user
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  fixed_email:
+    id: fixed_email
+    provider: workbench_email
+    status: false
+    settings:
+      recipients: ''
+  last_revision_author:
+    id: last_revision_author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  roles_with_access:
+    id: roles_with_access
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+replyTo: ''
+transitions:
+  editorial:
+    create_new_draft: create_new_draft

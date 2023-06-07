@@ -1,0 +1,22 @@
+uuid: 77ccd253-5e87-4c45-8706-a3f604c736a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+  module:
+    - filter
+    - system
+    - toolbar
+_core:
+  default_config_hash: '-cFOJ_-PFPdnGqZbbAKLBHGNwHgqjiia8B20xFGWPkQ'
+id: site_builder
+label: 'Site Builder'
+weight: -8
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'view the administration theme'

@@ -1,0 +1,12 @@
+uuid: 5b1801e2-73e6-4984-b014-755b2055eec7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 1n9y91ctpg5LaHi838CuYp1jt_QwI5Rq-k7oW6sNW5U
+id: media.medium_landscape
+label: 'Medium landscape'
+targetEntityType: media
+cache: true

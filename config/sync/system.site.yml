@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: en
+uuid: d1c79614-d2fb-4a5f-a796-af12737c591b
+name: 'Acquia CMS Headless'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /frontpage
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

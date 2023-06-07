@@ -1,0 +1,12 @@
+uuid: dec33852-7877-4001-b25e-ccc95994b0e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: s2uIlqZUoE8Bul36-DRP7BUoYddeT8B9jyqgavOOmuk
+id: node.referenced_image
+label: 'Referenced Image'
+targetEntityType: node
+cache: true

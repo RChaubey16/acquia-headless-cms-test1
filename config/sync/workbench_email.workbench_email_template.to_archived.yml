@@ -1,0 +1,61 @@
+uuid: 99251ce4-d083-44de-b1d6-972402146852
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+_core:
+  default_config_hash: uBp1z8G0it67O8v9FH10tdMfoKCwvIJQD0IGg5znL00
+id: to_archived
+label: 'To Archived'
+format: plain_text
+subject: '[node:title] State Changed'
+body:
+  value: '[node:title] is archived now'
+  format: plain_text
+bundles: {  }
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+  email:
+    id: email
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  role:
+    id: role
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+  entity_reference_user:
+    id: entity_reference_user
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  fixed_email:
+    id: fixed_email
+    provider: workbench_email
+    status: false
+    settings:
+      recipients: ''
+  last_revision_author:
+    id: last_revision_author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  roles_with_access:
+    id: roles_with_access
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+replyTo: ''
+transitions:
+  editorial:
+    archive: archive

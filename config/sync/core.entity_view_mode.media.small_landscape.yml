@@ -1,0 +1,12 @@
+uuid: 0b466a57-02cc-49aa-91ac-051283930ce9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: PAyRGSWdB17tzPh0SwAzm1Y5-4v8B2FLyTVmrWWvbhY
+id: media.small_landscape
+label: 'Small landscape'
+targetEntityType: media
+cache: true

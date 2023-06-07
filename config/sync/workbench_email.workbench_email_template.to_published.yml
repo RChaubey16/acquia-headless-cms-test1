@@ -1,0 +1,62 @@
+uuid: 56188def-d360-470d-93d2-a0fbd4bf0a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+_core:
+  default_config_hash: 78uuP8X4UwdxKeR-500q-a1HBgfFQ_MPaE5g6kb-BfU
+id: to_published
+label: 'To Published'
+format: plain_text
+subject: '[node:title] State Changed'
+body:
+  value: '[node:title] is published now'
+  format: plain_text
+bundles: {  }
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+  email:
+    id: email
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  role:
+    id: role
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+  entity_reference_user:
+    id: entity_reference_user
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  fixed_email:
+    id: fixed_email
+    provider: workbench_email
+    status: false
+    settings:
+      recipients: ''
+  last_revision_author:
+    id: last_revision_author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  roles_with_access:
+    id: roles_with_access
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+replyTo: ''
+transitions:
+  editorial:
+    publish: publish
+    archived_published: archived_published

@@ -1,0 +1,22 @@
+uuid: af3c1181-bbf8-48fd-a811-439c99cf1fca
+langcode: en
+status: true
+dependencies:
+  module:
+    - password_policy
+    - seckit
+    - system
+    - toolbar
+_core:
+  default_config_hash: '-0pb8DUzbf2olAVb1va9F5KrJyD4rscdEavbSmzkObc'
+id: user_administrator
+label: 'User Administrator'
+weight: -4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer seckit'
+  - 'administer site configuration'
+  - 'administer users'
+  - 'manage password reset'
+  - 'view the administration theme'
