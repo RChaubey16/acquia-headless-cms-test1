@@ -28,6 +28,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_clone: 0
+  entity_reference_revisions: 0
   facets: 0
   facets_pretty_paths: 0
   field: 0
@@ -109,6 +110,7 @@ module:
   content_translation: 10
   password_policy: 10
   views: 10
+  paragraphs: 11
   minimal: 1000
 theme:
   stark: 0

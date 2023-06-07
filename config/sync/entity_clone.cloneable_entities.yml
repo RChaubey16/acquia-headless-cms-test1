@@ -49,3 +49,5 @@ cloneable_entities:
   - facets_facet_source
   - facets_facet
   - search_api_autocomplete_search
+  - paragraphs_type
+  - paragraph
