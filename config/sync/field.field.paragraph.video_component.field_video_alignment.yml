@@ -1,0 +1,23 @@
+uuid: 17914ca4-aaa8-40fa-8519-5d28645c2b39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_alignment
+    - paragraphs.paragraphs_type.video_component
+  module:
+    - options
+id: paragraph.video_component.field_video_alignment
+field_name: field_video_alignment
+entity_type: paragraph
+bundle: video_component
+label: 'Video alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: centre
+default_value_callback: ''
+settings: {  }
+field_type: list_string

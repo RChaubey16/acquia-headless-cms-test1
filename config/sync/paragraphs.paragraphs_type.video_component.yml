@@ -1,0 +1,10 @@
+uuid: 61e2505c-3bb5-4079-8c57-577933dce2b0
+langcode: en
+status: true
+dependencies: {  }
+id: video_component
+label: 'Video Component'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
