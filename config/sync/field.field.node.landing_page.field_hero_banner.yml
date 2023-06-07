@@ -1,0 +1,31 @@
+uuid: 2cacee2b-0f14-40f4-a858-f8b2ae8ad87b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_banner
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_hero_banner
+field_name: field_hero_banner
+entity_type: node
+bundle: landing_page
+label: 'Landing page paragraphs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hero_banner: hero_banner
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

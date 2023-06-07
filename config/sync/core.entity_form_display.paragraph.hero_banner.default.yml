@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero_banner
   module:
     - link
+    - media_library
 id: paragraph.hero_banner.default
 targetEntityType: paragraph
 bundle: hero_banner
@@ -32,14 +33,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_hero_banner_image:
-    type: entity_reference_autocomplete
+    type: media_library_widget
     weight: 2
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
   field_hero_banner_sub_heading:
     type: string_textarea
