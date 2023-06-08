@@ -1,0 +1,40 @@
+uuid: 5d031d89-5d7d-4b13-b5d7-d58f99e4b0db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_component_paragra
+    - paragraphs.paragraphs_type.overview_component
+    - paragraphs.paragraphs_type.text_paragraph_component
+  module:
+    - entity_reference_revisions
+id: paragraph.overview_component.field_overview_component_paragra
+field_name: field_overview_component_paragra
+entity_type: paragraph
+bundle: overview_component
+label: 'Overview component paragraphs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_paragraph_component: text_paragraph_component
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner:
+        weight: 5
+        enabled: false
+      overview_component:
+        weight: 6
+        enabled: false
+      text_paragraph_component:
+        weight: 7
+        enabled: true
+      video_component:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

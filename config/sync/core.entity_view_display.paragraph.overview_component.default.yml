@@ -1,0 +1,34 @@
+uuid: 088890c7-60d6-4897-bf8c-7298b02d352a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.overview_component.field_overview_component_heading
+    - field.field.paragraph.overview_component.field_overview_component_paragra
+    - paragraphs.paragraphs_type.overview_component
+  module:
+    - entity_reference_revisions
+id: paragraph.overview_component.default
+targetEntityType: paragraph
+bundle: overview_component
+mode: default
+content:
+  field_overview_component_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_overview_component_paragra:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

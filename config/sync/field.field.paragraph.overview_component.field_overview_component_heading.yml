@@ -1,0 +1,19 @@
+uuid: 4c1be855-7149-45ad-878a-45d747911628
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_component_heading
+    - paragraphs.paragraphs_type.overview_component
+id: paragraph.overview_component.field_overview_component_heading
+field_name: field_overview_component_heading
+entity_type: paragraph
+bundle: overview_component
+label: 'Overview component heading'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

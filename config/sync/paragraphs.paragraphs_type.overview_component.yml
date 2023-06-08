@@ -1,0 +1,10 @@
+uuid: f9bdee82-7fbf-4264-b269-c6f749bfb926
+langcode: en
+status: true
+dependencies: {  }
+id: overview_component
+label: 'Overview component'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

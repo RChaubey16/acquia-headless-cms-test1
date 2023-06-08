@@ -1,0 +1,10 @@
+uuid: b4847d47-5156-43f8-8b20-545ad5808ea6
+langcode: en
+status: true
+dependencies: {  }
+id: text_paragraph_component
+label: 'Text paragraph component'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,44 @@
+uuid: a8f7a315-f49f-42d6-843c-4b8b15883847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.overview_component.field_overview_component_heading
+    - field.field.paragraph.overview_component.field_overview_component_paragra
+    - paragraphs.paragraphs_type.overview_component
+  module:
+    - paragraphs
+id: paragraph.overview_component.default
+targetEntityType: paragraph
+bundle: overview_component
+mode: default
+content:
+  field_overview_component_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_overview_component_paragra:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
